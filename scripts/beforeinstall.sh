@@ -1,10 +1,11 @@
 #!/bin/bash
 
 # configure node.js repo
+
 curl --silent --location https://rpm.nodesource.com/setup_8.x | bash -
 
 # install node.js
-yum install nodejs -y
+apt install nodejs -y
 
 # create systemd service
 cat > /etc/systemd/system/nodejs.service <<'EOF'
